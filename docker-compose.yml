@@ -22,6 +22,8 @@ services:
       - SESSION_SECRET=${SESSION_SECRET}
       - SENTRY_DSN=${SENTRY_DSN}
       - SENTRY_ENVIRONMENT=${SENTRY_ENVIRONMENT}
+    ports:
+      - "${PORT}:${PORT}"
     depends_on:
       - redis
     networks:
