@@ -33,8 +33,7 @@ export class AuthController {
               properties: {
                 id: { type: 'string', example: '1' },
                 email: { type: 'string', example: 'user@example.com' },
-                first_name: { type: 'string', example: 'John' },
-                last_name: { type: 'string', example: 'Doe' },
+                name: { type: 'string', example: 'John Doe' },
                 avatar_url: { type: 'string', nullable: true, example: null },
                 created_at: { type: 'string', example: '2024-01-01T00:00:00Z' },
                 updated_at: { type: 'string', example: '2024-01-01T00:00:00Z' },
@@ -99,8 +98,7 @@ export class AuthController {
     const mockUser = {
       id: '1',
       email: registerDto.email,
-      first_name: registerDto.first_name,
-      last_name: registerDto.last_name,
+      name: registerDto.name,
       avatar_url: registerDto.avatar_url || null,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString(),
@@ -143,8 +141,7 @@ export class AuthController {
               properties: {
                 id: { type: 'string', example: '1' },
                 email: { type: 'string', example: 'user@example.com' },
-                first_name: { type: 'string', example: 'John' },
-                last_name: { type: 'string', example: 'Doe' },
+                name: { type: 'string', example: 'John Doe' },
                 avatar_url: { type: 'string', nullable: true, example: null },
               },
             },
@@ -180,8 +177,7 @@ export class AuthController {
     const mockUser = {
       id: '1',
       email: loginDto.email,
-      first_name: 'John',
-      last_name: 'Doe',
+      name: 'John Doe',
       avatar_url: null,
     };
 

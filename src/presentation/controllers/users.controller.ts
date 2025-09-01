@@ -24,8 +24,7 @@ export class UsersController {
           properties: {
             id: { type: 'string', example: '1' },
             email: { type: 'string', example: 'user@example.com' },
-            first_name: { type: 'string', example: 'John' },
-            last_name: { type: 'string', example: 'Doe' },
+            name: { type: 'string', example: 'John Doe' },
             avatar_url: { type: 'string', nullable: true, example: null },
             created_at: { type: 'string', example: '2024-01-01T00:00:00Z' },
             updated_at: { type: 'string', example: '2024-01-01T00:00:00Z' },
@@ -53,11 +52,10 @@ export class UsersController {
   })
   async getProfile() {
     // TODO: Implement get user profile logic
-    const mockUser = {
+    const mockProfile = {
       id: '1',
       email: 'user@example.com',
-      first_name: 'John',
-      last_name: 'Doe',
+      name: 'John Doe',
       avatar_url: null,
       created_at: '2024-01-01T00:00:00Z',
       updated_at: '2024-01-01T00:00:00Z',
@@ -65,7 +63,7 @@ export class UsersController {
 
     return {
       success: true,
-      data: mockUser,
+      data: mockProfile,
     };
   }
 

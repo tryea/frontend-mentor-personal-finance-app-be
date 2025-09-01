@@ -21,8 +21,7 @@ export class SeederService {
         .insert(users)
         .values({
           email: 'demo@example.com',
-          firstName: 'Demo',
-          lastName: 'User',
+          name: 'Demo User',
           passwordHash: '$2b$12$dummy.hash.for.demo.user', // This should be properly hashed in production
         })
         .returning();

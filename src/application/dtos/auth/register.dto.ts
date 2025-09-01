@@ -21,22 +21,13 @@ export class RegisterDto {
   password: string;
 
   @ApiProperty({
-    description: 'User first name',
-    example: 'John',
-    maxLength: 100,
+    description: 'User full name',
+    example: 'John Doe',
+    maxLength: 200,
   })
-  @IsString({ message: 'First name must be a string' })
-  @MaxLength(100, { message: 'First name must not exceed 100 characters' })
-  first_name: string;
-
-  @ApiProperty({
-    description: 'User last name',
-    example: 'Doe',
-    maxLength: 100,
-  })
-  @IsString({ message: 'Last name must be a string' })
-  @MaxLength(100, { message: 'Last name must not exceed 100 characters' })
-  last_name: string;
+  @IsString({ message: 'Name must be a string' })
+  @MaxLength(200, { message: 'Name must not exceed 200 characters' })
+  name: string;
 
   @ApiPropertyOptional({
     description: 'User avatar URL',
