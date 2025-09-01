@@ -41,5 +41,7 @@ EXPOSE $PORT
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD bun --version || exit 1
 
+# Set hostname to 0.0.0.0
+ENV HOSTNAME="0.0.0.0"
 # Start the application
 CMD ["bun", "run", "start:prod"]
