@@ -35,7 +35,7 @@ COPY --from=base --chown=nestjs:nodejs /app/package.json ./package.json
 USER nestjs
 
 # Expose port (will be read from environment)
-EXPOSE 3000
+EXPOSE $PORT
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
