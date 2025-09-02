@@ -30,6 +30,7 @@ RUN adduser -S nestjs -u 1001
 COPY --from=base --chown=nestjs:nodejs /app/dist ./dist
 COPY --from=base --chown=nestjs:nodejs /app/node_modules ./node_modules
 COPY --from=base --chown=nestjs:nodejs /app/package.json ./package.json
+COPY --from=base --chown=nestjs:nodejs /app/assets ./assets
 
 # Switch to non-root user
 USER nestjs

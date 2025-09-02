@@ -4,6 +4,7 @@ import { ConfigService } from "@nestjs/config";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import type { NestExpressApplication } from "@nestjs/platform-express";
 import * as session from "express-session";
+import { join } from "path";
 import { AppModule } from "./app.module";
 import { REDIS_CLIENT } from "./infrastructure/redis/redis.module";
 import { createSessionConfig } from "./infrastructure/config/session.config";
@@ -27,6 +28,14 @@ async function bootstrap() {
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization", "Cookie"],
   });
+
+  // Configure static assets serving
+  app.useStaticAssets(join(__dirname, '..', '..', 'assets'), {
+    prefix: '/assets/',
+  });
+  
+  // Log the assets path for debugging
+  console.log('📁 Static assets path:', join(__dirname, '..', '..', 'assets'));
 
   // Configure session middleware
   const sessionConfig = createSessionConfig(configService, redisClient);
