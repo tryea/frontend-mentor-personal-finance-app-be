@@ -1,6 +1,15 @@
 import { Injectable } from '@nestjs/common';
 import { DatabaseService } from './database.service';
-import { users, categories, transactions, budgets, pots, potTransactions, userBalances } from '../../../drizzle/schemas';
+import {
+  users,
+  categories,
+  transactions,
+  budgets,
+  pots,
+  potTransactions,
+  userBalances,
+  userContacts,
+} from '../../../drizzle/schemas';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -12,6 +21,10 @@ export class SeederService {
     const dataPath = path.join(process.cwd(), 'data.json');
     const rawData = fs.readFileSync(dataPath, 'utf8');
     const data = JSON.parse(rawData);
+
+    const contactDataPath = path.join(process.cwd(), 'contact.json');
+    const rawContactData = fs.readFileSync(contactDataPath, 'utf8');
+    const contactData = JSON.parse(rawContactData);
 
     console.log('Starting database seeding...');
 
@@ -28,10 +41,28 @@ export class SeederService {
 
       console.log('Created demo user:', user.id);
 
+      // Seed user contacts
+      const userContactInserts = contactData.map((contact: any) => ({
+        userId: user.id,
+        name: contact.name,
+        avatarUrl: contact.avatar,
+      }));
+
+      const insertedUserContacts = await this.databaseService.db
+        .insert(userContacts)
+        .values(userContactInserts)
+        .returning();
+
+      console.log(`Created ${insertedUserContacts.length} user contacts`);
+
       // Extract unique categories from transactions and budgets
-      const transactionCategories = [...new Set(data.transactions.map((t: any) => t.category))];
+      const transactionCategories = [
+        ...new Set(data.transactions.map((t: any) => t.category)),
+      ];
       const budgetCategories = data.budgets.map((b: any) => b.category);
-      const allCategories = [...new Set([...transactionCategories, ...budgetCategories])];
+      const allCategories = [
+        ...new Set([...transactionCategories, ...budgetCategories]),
+      ];
 
       // Insert categories
       const categoryInserts = allCategories.map(categoryName => ({
@@ -49,7 +80,7 @@ export class SeederService {
 
       // Create category lookup map
       const categoryMap = new Map(
-        insertedCategories.map(cat => [cat.name, cat.id])
+        insertedCategories.map(cat => [cat.name, cat.id]),
       );
 
       // Insert transactions
@@ -105,14 +136,12 @@ export class SeederService {
       console.log(`Created ${insertedPots.length} pots`);
 
       // Insert user balance
-      await this.databaseService.db
-        .insert(userBalances)
-        .values({
-          userId: user.id,
-          currentBalance: data.balance.current,
-          totalIncome: data.balance.income,
-          totalExpenses: data.balance.expenses,
-        });
+      await this.databaseService.db.insert(userBalances).values({
+        userId: user.id,
+        currentBalance: data.balance.current,
+        totalIncome: data.balance.income,
+        totalExpenses: data.balance.expenses,
+      });
 
       console.log('Created user balance record');
       console.log('Database seeding completed successfully!');
@@ -124,16 +153,16 @@ export class SeederService {
 
   private getCategoryColor(categoryName: string): string {
     const colorMap: Record<string, string> = {
-      'General': '#277C78',
+      General: '#277C78',
       'Dining Out': '#F2CDAC',
-      'Groceries': '#82C9D7',
-      'Entertainment': '#626070',
-      'Transportation': '#826CB0',
-      'Lifestyle': '#AF81BA',
-      'Shopping': '#597C7C',
-      'Bills': '#277C78',
+      Groceries: '#82C9D7',
+      Entertainment: '#626070',
+      Transportation: '#826CB0',
+      Lifestyle: '#AF81BA',
+      Shopping: '#597C7C',
+      Bills: '#277C78',
       'Personal Care': '#626070',
-      'Education': '#82C9D7',
+      Education: '#82C9D7',
     };
 
     return colorMap[categoryName] || '#277C78';
@@ -141,7 +170,7 @@ export class SeederService {
 
   async clearDatabase(): Promise<void> {
     console.log('Clearing database...');
-    
+
     try {
       // Delete in reverse order of dependencies
       await this.databaseService.db.delete(potTransactions);
@@ -150,8 +179,9 @@ export class SeederService {
       await this.databaseService.db.delete(budgets);
       await this.databaseService.db.delete(pots);
       await this.databaseService.db.delete(categories);
+      await this.databaseService.db.delete(userContacts);
       await this.databaseService.db.delete(users);
-      
+
       console.log('Database cleared successfully!');
     } catch (error) {
       console.error('Error clearing database:', error);
