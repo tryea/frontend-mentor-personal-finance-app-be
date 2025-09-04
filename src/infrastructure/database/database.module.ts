@@ -1,8 +1,7 @@
-import { Global, Module } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
-import { DatabaseService } from './database.service';
+import { Global, Module } from "@nestjs/common";
+import { DatabaseService } from "./database.service";
 
-export const DATABASE_CONNECTION = 'DATABASE_CONNECTION';
+export const DATABASE_CONNECTION = "DATABASE_CONNECTION";
 
 @Global()
 @Module({

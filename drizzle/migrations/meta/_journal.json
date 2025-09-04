@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1756741408809,
-      "tag": "0000_mean_sunfire",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1756747818758,
-      "tag": "0001_calm_caretaker",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1756907634842,
-      "tag": "0002_dark_paladin",
+      "when": 1756977348941,
+      "tag": "0000_organic_junta",
       "breakpoints": true
     }
   ]
