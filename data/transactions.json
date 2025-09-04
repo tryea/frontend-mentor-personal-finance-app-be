@@ -1,0 +1,394 @@
+[
+  {
+    "contactName": "Emma Richardson",
+    "budgetName": "General",
+    "amount": 75.5,
+    "type": "INCOME",
+    "transactionDate": "2024-08-19T14:23:11Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Savory Bites Bistro",
+    "budgetName": "Dining Out",
+    "amount": 55.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-19T20:23:11Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Daniel Carter",
+    "budgetName": "General",
+    "amount": 42.3,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-18T09:45:32Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sun Park",
+    "budgetName": "General",
+    "amount": 120.0,
+    "type": "INCOME",
+    "transactionDate": "2024-08-17T16:12:05Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Urban Services Hub",
+    "budgetName": "General",
+    "amount": 65.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-17T21:08:09Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Liam Hughes",
+    "budgetName": "Groceries",
+    "amount": 65.75,
+    "type": "INCOME",
+    "transactionDate": "2024-08-15T18:20:33Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Lily Ramirez",
+    "budgetName": "General",
+    "amount": 50.0,
+    "type": "INCOME",
+    "transactionDate": "2024-08-14T13:05:27Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Ethan Clark",
+    "budgetName": "Dining Out",
+    "amount": 32.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-13T20:15:59Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "James Thompson",
+    "budgetName": "Entertainment",
+    "amount": 5.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-11T15:45:38Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Pixel Playground",
+    "budgetName": "Entertainment",
+    "amount": 10.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-11T18:45:38Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Ella Phillips",
+    "budgetName": "Dining Out",
+    "amount": 45.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-10T19:22:51Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sofia Peterson",
+    "budgetName": "Transportation",
+    "amount": 15.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-08T08:55:17Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Mason Martinez",
+    "budgetName": "Lifestyle",
+    "amount": 35.25,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-07T17:40:29Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Green Plate Eatery",
+    "budgetName": "Groceries",
+    "amount": 78.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-06T08:25:44Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sebastian Cook",
+    "budgetName": "Transportation",
+    "amount": 22.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-06T10:05:44Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "William Harris",
+    "budgetName": "Personal Care",
+    "amount": 10.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-05T14:30:56Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Elevate Education",
+    "budgetName": "Education",
+    "amount": 50.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-04T11:15:22Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Serenity Spa & Wellness",
+    "budgetName": "Personal Care",
+    "amount": 30.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-03T14:00:37Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Spark Electric Solutions",
+    "budgetName": "Bills",
+    "amount": 100.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-02T09:25:11Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Rina Sato",
+    "budgetName": "Bills",
+    "amount": 50.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-02T13:31:11Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Swift Ride Share",
+    "budgetName": "Transportation",
+    "amount": 18.75,
+    "type": "EXPENSE",
+    "transactionDate": "2024-08-01T18:40:33Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Aqua Flow Utilities",
+    "budgetName": "Bills",
+    "amount": 100.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-30T13:20:14Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "EcoFuel Energy",
+    "budgetName": "Bills",
+    "amount": 35.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-29T11:55:29Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Yuna Kim",
+    "budgetName": "Dining Out",
+    "amount": 28.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-29T13:51:29Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Flavor Fiesta",
+    "budgetName": "Dining Out",
+    "amount": 42.75,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-27T20:15:06Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Harper Edwards",
+    "budgetName": "Shopping",
+    "amount": 89.99,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-26T09:43:23Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Buzz Marketing Group",
+    "budgetName": "General",
+    "amount": 3358.0,
+    "type": "INCOME",
+    "transactionDate": "2024-07-26T14:40:23Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "TechNova Innovations",
+    "budgetName": "Shopping",
+    "amount": 29.99,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-25T16:25:37Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "ByteWise",
+    "budgetName": "Lifestyle",
+    "amount": 49.99,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-23T09:35:14Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Nimbus Data Storage",
+    "budgetName": "Bills",
+    "amount": 9.99,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-21T10:05:42Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Emma Richardson",
+    "budgetName": "General",
+    "amount": 25.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-20T17:30:55Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Daniel Carter",
+    "budgetName": "General",
+    "amount": 50.0,
+    "type": "INCOME",
+    "transactionDate": "2024-07-19T12:45:09Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sun Park",
+    "budgetName": "General",
+    "amount": 38.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-18T19:20:23Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Harper Edwards",
+    "budgetName": "Shopping",
+    "amount": 29.99,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-17T14:55:37Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Liam Hughes",
+    "budgetName": "Groceries",
+    "amount": 52.75,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-16T10:10:51Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Lily Ramirez",
+    "budgetName": "General",
+    "amount": 75.0,
+    "type": "INCOME",
+    "transactionDate": "2024-07-15T16:35:04Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Ethan Clark",
+    "budgetName": "Dining Out",
+    "amount": 41.25,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-14T20:50:18Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Rina Sato",
+    "budgetName": "Entertainment",
+    "amount": 10.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-13T09:15:32Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "James Thompson",
+    "budgetName": "Bills",
+    "amount": 95.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-12T13:40:46Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Ella Phillips",
+    "budgetName": "Dining Out",
+    "amount": 33.75,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-11T18:05:59Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Yuna Kim",
+    "budgetName": "Dining Out",
+    "amount": 27.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-10T12:30:13Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sofia Peterson",
+    "budgetName": "Transportation",
+    "amount": 12.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-09T08:55:27Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Mason Martinez",
+    "budgetName": "Lifestyle",
+    "amount": 65.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-08T15:20:41Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Sebastian Cook",
+    "budgetName": "Transportation",
+    "amount": 20.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-07T11:45:55Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "William Harris",
+    "budgetName": "General",
+    "amount": 20.0,
+    "type": "INCOME",
+    "transactionDate": "2024-07-06T17:10:09Z",
+    "isRecurring": false
+  },
+  {
+    "contactName": "Elevate Education",
+    "budgetName": "Education",
+    "amount": 50.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-05T11:15:22Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Serenity Spa & Wellness",
+    "budgetName": "Personal Care",
+    "amount": 30.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-03T14:00:37Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Spark Electric Solutions",
+    "budgetName": "Bills",
+    "amount": 100.0,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-02T09:25:51Z",
+    "isRecurring": true
+  },
+  {
+    "contactName": "Swift Ride Share",
+    "budgetName": "Transportation",
+    "amount": 16.5,
+    "type": "EXPENSE",
+    "transactionDate": "2024-07-02T19:50:05Z",
+    "isRecurring": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "userFullName": "John Doe",
+    "categoryName": "Entertainment",
+    "themeHexColor": "#277C78",
+    "maximumAmount": 50.0
+  },
+  {
+    "userFullName": "John Doe",
+    "categoryName": "Bills",
+    "themeHexColor": "#82C9D7",
+    "maximumAmount": 750.0
+  },
+  {
+    "userFullName": "John Doe",
+    "categoryName": "Dining Out",
+    "themeHexColor": "#F2CDAC",
+    "maximumAmount": 75.0
+  },
+  {
+    "userFullName": "John Doe",
+    "categoryName": "Personal Care",
+    "themeHexColor": "#626070",
+    "maximumAmount": 100.0
+  }
+]

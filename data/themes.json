@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Green",
+    "hexColor": "#277c78"
+  },
+  {
+    "name": "Yellow",
+    "hexColor": "#f2cdac"
+  },
+  {
+    "name": "Cyan",
+    "hexColor": "#82c9d7"
+  },
+  {
+    "name": "Navy",
+    "hexColor": "#626070"
+  },
+  {
+    "name": "Red",
+    "hexColor": "#c94736"
+  },
+  {
+    "name": "Purple",
+    "hexColor": "#826cb0"
+  },
+  {
+    "name": "Turquoise",
+    "hexColor": "#597c7c"
+  },
+  {
+    "name": "Brown",
+    "hexColor": "#93674f"
+  },
+  {
+    "name": "Magenta",
+    "hexColor": "#934f6f"
+  },
+  {
+    "name": "Blue",
+    "hexColor": "#3f82b2"
+  },
+  {
+    "name": "Navy Grey",
+    "hexColor": "#97a0ac"
+  },
+  {
+    "name": "Army Green",
+    "hexColor": "#7f9161"
+  },
+  {
+    "name": "Pink",
+    "hexColor": "#af81ba"
+  },
+  {
+    "name": "Gold",
+    "hexColor": "#cab361"
+  },
+  {
+    "name": "Orange",
+    "hexColor": "#be6c49"
+  }
+]
