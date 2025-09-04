@@ -6,6 +6,7 @@ import {
   integer,
   text,
 } from "drizzle-orm/pg-core";
+import { relations } from "drizzle-orm";
 import { pots } from "./pots";
 
 export const potTransactions = pgTable("pot_transactions", {
@@ -18,3 +19,10 @@ export const potTransactions = pgTable("pot_transactions", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
+
+export const potTransactionsRelations = relations(potTransactions, ({ one }) => ({
+  pot: one(pots, {
+    fields: [potTransactions.potId],
+    references: [pots.id],
+  }),
+}));

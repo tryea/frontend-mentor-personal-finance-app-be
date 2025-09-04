@@ -9,6 +9,7 @@ import { relations } from "drizzle-orm";
 import { users } from "./users";
 import { categories } from "./categories";
 import { transactions } from "./transactions";
+import { themes } from "./themes";
 
 export const budgets = pgTable("budgets", {
   id: serial("id").primaryKey(),
@@ -22,7 +23,9 @@ export const budgets = pgTable("budgets", {
     precision: 12,
     scale: 2,
   }).notNull(),
-  themeId: integer("theme_id").notNull(),
+  themeId: integer("theme_id")
+    .notNull()
+    .references(() => themes.id),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
@@ -35,6 +38,10 @@ export const budgetsRelations = relations(budgets, ({ one, many }) => ({
   category: one(categories, {
     fields: [budgets.categoryId],
     references: [categories.id],
+  }),
+  theme: one(themes, {
+    fields: [budgets.themeId],
+    references: [themes.id],
   }),
   transactions: many(transactions),
 }));
